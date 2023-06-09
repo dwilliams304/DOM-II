@@ -26,17 +26,23 @@ Do not **move or rename any files** in this project. The website's source files 
 
 * [ ] Using your [index.js file](src/index.js), create [event listeners](https://developer.mozilla.org/en-US/docs/Web/Events) of at least 10 _different_ types. You must Use your creativity to make the Fun Bus site more interactive. For example you could change colors, animate objects, add DOM elements, remove them, etc.
 
-* [ ] Here are some event types you could try to use:
-  * [x] `mouseover`
-  * [x] `keydown`
-  * [x] `wheel`
-  * [ ] `load`
-  * [ ] `focus`
-  * [ ] `resize`
-  * [ ] `scroll`
-  * [ ] `select`
-  * [x] `dblclick`
-  * [ ] `drag / drop`
+* Stupid site functionality + [Event Used]:
+-Pressing r,g, or b anywhere will change background color. 
+^[keydown]^
+-Copying the "Let's Go!" text changes it. 
+^[copy]^
+-Click on each sign me up button will change text. 
+^[click]^
+-Double clicking on the Home button will change a few things. 
+^[dblclick]^
+-Hovering over About Us/Blog does something. 
+^[mouseover] + [mouseenter]/[mouseout]^
+-Right clicking on "Welcome To Fun Bus!" changes text.
+^[contextmenu]^
+-Scrolling over text under 'Welcome to Fun Bus' changes text.
+^[scroll]^
+-Clicking on the Contact button and typing any letter will change text to letter pressed.
+^[keydown]^
 
 Note: Drag and drop is a bit more advanced than the others. It's not actually a single type of event but several types that need to work together.
 

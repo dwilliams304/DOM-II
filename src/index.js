@@ -41,10 +41,32 @@ signMeUpBtns.forEach(btn => {
 })
 
 const welcomeText = document.querySelector('.intro h2');
-welcomeText.addEventListener('mouseover', () => {
+welcomeText.addEventListener('contextmenu', () => {
     welcomeText.textContent = 'Welcome to THE THUNDERDOME';
 })
 const welcomeP = document.querySelector('.intro p');
 document.addEventListener('mousewheel', () => {
     welcomeP.textContent = 'No no please! I dont want you to stop reading me.'
 })
+
+const letsGoHeader = document.querySelector('.content-section h2');
+letsGoHeader.addEventListener('copy', () => {
+    letsGoHeader.textContent = 'Why? Where are you gonna paste this?'
+})
+
+const blogBtn = document.querySelector('.nav-link:nth-child(3)');
+blogBtn.addEventListener('mouseenter', () => {
+    blogBtn.textContent = 'Not suspicious at all.';
+})
+blogBtn.addEventListener('mouseout', () => {
+    blogBtn.textContent = 'Blog';
+})
+
+const contactBtn = document.querySelector('.nav-link:nth-child(4)');
+contactBtn.addEventListener('keydown', (e) => {
+    contactBtn.textContent = e.key;
+})
+
+
+
+//10 Event listeners
