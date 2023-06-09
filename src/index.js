@@ -31,3 +31,20 @@ document.addEventListener('keydown', (e) => {
         body.style.backgroundColor = 'white';
     }
 })
+
+const signMeUpBtns = document.querySelectorAll('.btn');
+signMeUpBtns.forEach(btn => {
+    btn.addEventListener('click', (e) =>
+    {
+        btn.textContent = 'So rude!';
+    })
+})
+
+const welcomeText = document.querySelector('.intro h2');
+welcomeText.addEventListener('mouseover', () => {
+    welcomeText.textContent = 'Welcome to THE THUNDERDOME';
+})
+const welcomeP = document.querySelector('.intro p');
+document.addEventListener('mousewheel', () => {
+    welcomeP.textContent = 'No no please! I dont want you to stop reading me.'
+})
